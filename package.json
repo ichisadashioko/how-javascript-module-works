@@ -1,0 +1,20 @@
+{
+  "name": "redux-slides",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development parcel ./index.html --no-hmr --open"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "redux": "^4.0.5",
+    "react-redux": "^7.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-redux": "^7.1.5",
+    "cross-env": "^6.0.3",
+    "typescript": "^3.7.4"
+  }
+}
