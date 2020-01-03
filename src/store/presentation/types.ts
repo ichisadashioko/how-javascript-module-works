@@ -1,5 +1,5 @@
 export interface SlideState {
-    index: number
+    slideIndex: number
 }
 
 export const NEXT_SLIDE = 'NEXT_SLIDE'

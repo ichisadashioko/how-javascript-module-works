@@ -3,7 +3,7 @@ __Questions__
 - Why is it possible to import stuffs from other JavaScript files?
     - I mean in a browser runtime some code run to define the functions, variables, etc. and all the code run after that can use the defined functions, variables (presumably no code modify them). JavaScript in browser cares about the execution order of the scripts. `import` and `export` do not even work in Developer Console.
 - [x] What does `import` actually do? - [Nothing](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
-- [x] What `require()` does in NodeJS? - [Pseudocode](https://nodejs.org/api/modules.html#modules_all_together)
+- [x] What does `require()` do in NodeJS? - [Pseudocode](https://nodejs.org/api/modules.html#modules_all_together)
 
 The `require` function definition for (non-native) modules in NodeJS.
 
