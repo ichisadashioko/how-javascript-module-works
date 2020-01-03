@@ -12,7 +12,6 @@ const store = createStore(rootReducer)
 
 render(
     <Provider store={store}>
-        {/* <Slide slideIndex={store.getState().presentation.slideIndex} /> */}
         <Slide />
         <SlideNavigator
             onClickNext={() => store.dispatch({ type: NEXT_SLIDE })}

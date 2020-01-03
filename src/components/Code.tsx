@@ -1,11 +1,21 @@
 import React from 'react'
+import hljs from 'highlight.js'
 
-const Code = (props: { snippet: string, inline: boolean }) => {
+function renderHtml(html: string) {
+    return {
+        __html: html,
+    }
+}
+
+const Code = (props: { snippet: string, inline: boolean, language?: string }) => {
     if (props.inline) {
         return (<code>{props.snippet}</code>)
     } else {
+        if (props.language) {
+            return <pre dangerouslySetInnerHTML={renderHtml(hljs.highlight(props.language, props.snippet).value)} />
+        }
         return (
-            <pre><code>{props.snippet}</code></pre>
+            <pre dangerouslySetInnerHTML={renderHtml(hljs.highlightAuto(props.snippet).value)} />
         )
     }
 }

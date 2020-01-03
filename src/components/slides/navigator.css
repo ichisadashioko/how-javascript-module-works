@@ -1,0 +1,15 @@
+.slide-navigator {
+    max-width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+.slide-navigator>.left{
+    position: absolute;
+    left: 0;
+}
+
+.slide-navigator>.right{
+    position: absolute;
+    right: 0;
+}
