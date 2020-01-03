@@ -13,10 +13,11 @@ const Code = (props: { snippet: string, inline: boolean, language?: string }) =>
     } else {
         if (props.language) {
             return <pre dangerouslySetInnerHTML={renderHtml(hljs.highlight(props.language, props.snippet).value)} />
+        } else {
+            return (
+                <pre dangerouslySetInnerHTML={renderHtml(hljs.highlightAuto(props.snippet).value)} />
+            )
         }
-        return (
-            <pre dangerouslySetInnerHTML={renderHtml(hljs.highlightAuto(props.snippet).value)} />
-        )
     }
 }
 
