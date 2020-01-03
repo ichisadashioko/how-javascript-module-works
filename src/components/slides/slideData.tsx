@@ -62,7 +62,7 @@ export const SLIDES = [
                     <ul>
                         <li>When we start to request a module, we start a new async method and pass the callback.</li>
                         <li>After a module is loaded, the callback will check for all dependencies have been loaded. If true then execute the callback code, otherwise return.</li>
-                        <li>The last arrived module will execute the callback code. Whether it is define a new module or run some code that requires some modules.</li>
+                        <li>The last arrived module will execute the callback code. Whether it defines a new module or runs some code that requires some modules.</li>
                     </ul>
                 </li>
             </ul>
